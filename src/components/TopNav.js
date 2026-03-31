@@ -10,8 +10,9 @@ function TopNav() {
   const links = [
     { label: "Home", id: "top" },
     { label: "What I Teach", id: "teaches" },
+    { label: "Learning Paths", id: "learning-paths" },
     { label: "About", id: "about" },
-    { label: "Testimonials", id: "testimonials" },
+    { label: "FAQ", id: "faq" },
     { label: "Booking", id: "booking-cta" },
   ];
 

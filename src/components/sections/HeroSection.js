@@ -26,7 +26,7 @@ function HeroSection() {
               Hands-on · Expert · Practical
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
-              Bryan Analytics Lab
+              Data Analytics Tutoring: Excel, SQL, Python, and Machine Learning
             </h1>
             <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-slate-400 sm:text-xl">
               Hands-on tutoring in Excel, SQL, Python, and Machine Learning.

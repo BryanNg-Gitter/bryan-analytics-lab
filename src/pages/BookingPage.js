@@ -1,10 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FooterSection from "../components/FooterSection.js";
+import SEOHead from "../components/SEOHead.js";
+import { SITE_URL } from "../seo/siteConfig.js";
 
 function BookingPage() {
+  const bookingSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Book a Data Analytics Tutoring Session",
+    url: `${SITE_URL}/booking`,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Bryan Analytics Lab",
+      url: SITE_URL,
+    },
+  };
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Book Data Analytics Tutoring Session | Bryan Analytics Lab"
+        description="Book a one-on-one data analytics tutoring session for Excel, SQL, Python, and machine learning fundamentals."
+        path="/booking"
+        keywords="book data analytics tutor, excel tutoring, sql tutoring, python tutoring"
+        structuredData={[bookingSchema]}
+      />
       <header className="border-b border-white/[0.06] bg-[#070a12]/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
           <span className="text-sm font-semibold text-white">Bryan Analytics Lab</span>

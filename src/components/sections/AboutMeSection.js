@@ -24,7 +24,7 @@ function AboutMeSection() {
             <div className="aspect-square overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.02] p-2 shadow-[0_24px_80px_-40px_rgba(0,0,0,0.6)] ring-1 ring-white/[0.05]">
               <img
                 src={profileSrc}
-                alt=""
+                alt="Bryan Analytics Lab data analytics tutor profile"
                 className="h-full w-full rounded-2xl object-cover"
               />
             </div>
