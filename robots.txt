@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bryanng-gitter.github.io/bryan-analytics-lab/sitemap.xml
