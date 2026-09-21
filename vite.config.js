@@ -20,7 +20,6 @@ function treatJsFilesAsJsx() {
 }
 
 module.exports = {
-  base: process.env.NODE_ENV === "production" ? "/bryan-analytics-lab/" : "/",
   plugins: [treatJsFilesAsJsx(), react()],
   optimizeDeps: {
     esbuildOptions: {

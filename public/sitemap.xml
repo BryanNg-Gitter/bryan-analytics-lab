@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bryanng-gitter.github.io/bryan-analytics-lab/</loc>
+    <loc>http://localhost:5173/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bryanng-gitter.github.io/bryan-analytics-lab/booking</loc>
+    <loc>http://localhost:5173/booking</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bryanng-gitter.github.io/bryan-analytics-lab/excel-data-analytics-tutoring</loc>
+    <loc>http://localhost:5173/excel-data-analytics-tutoring</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bryanng-gitter.github.io/bryan-analytics-lab/sql-data-analytics-tutoring</loc>
+    <loc>http://localhost:5173/sql-data-analytics-tutoring</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bryanng-gitter.github.io/bryan-analytics-lab/python-data-analytics-tutoring</loc>
+    <loc>http://localhost:5173/python-data-analytics-tutoring</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bryanng-gitter.github.io/bryan-analytics-lab/machine-learning-tutoring-for-beginners</loc>
+    <loc>http://localhost:5173/machine-learning-tutoring-for-beginners</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
