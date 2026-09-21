@@ -5,7 +5,6 @@ import AboutMeSection from "../components/sections/AboutMeSection.js";
 import WhatITeachSection from "../components/sections/WhatITeachSection.js";
 import WhyLearnWithMeSection from "../components/sections/WhyLearnWithMeSection.js";
 import LessonPreviewSection from "../components/sections/LessonPreviewSection.js";
-import StudentMessagesSection from "../components/sections/StudentMessagesSection.js";
 import LearningPathsSection from "../components/sections/LearningPathsSection.js";
 import FAQSection from "../components/sections/FAQSection.js";
 import BookingCTASection from "../components/sections/BookingCTASection.js";
@@ -94,7 +93,6 @@ function HomePage() {
         <WhyLearnWithMeSection />
         <LessonPreviewSection />
         <LearningPathsSection />
-        <StudentMessagesSection />
         <FAQSection />
         <BookingCTASection />
       </main>

@@ -1,14 +1,17 @@
+const assetUrl = (path) =>
+  `${import.meta.env.BASE_URL}${String(path).replace(/^\//, "")}`;
+
 const testimonialSlides = [
   {
-    src: "/testimonials/testimonial-1.png",
+    src: assetUrl("/testimonials/testimonial-1.png"),
     alt: "Screenshot of a parent message thanking Bryan for tutoring support and guidance.",
   },
   {
-    src: "/testimonials/testimonial-2.png",
+    src: assetUrl("/testimonials/testimonial-2.png"),
     alt: "Screenshot of a parent testimonial expressing gratitude for schedule support and tutoring.",
   },
   {
-    src: "/testimonials/testimonial-3.png",
+    src: assetUrl("/testimonials/testimonial-3.png"),
     alt: "Screenshot of a parent message offering a higher hourly rate because they value Bryan's tutoring.",
   },
 ];
