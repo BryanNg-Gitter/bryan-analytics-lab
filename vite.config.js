@@ -20,6 +20,7 @@ function treatJsFilesAsJsx() {
 }
 
 module.exports = {
+  base: process.env.NODE_ENV === "production" ? "/bryan-analytics-lab/" : "/",
   plugins: [treatJsFilesAsJsx(), react()],
   optimizeDeps: {
     esbuildOptions: {
@@ -31,9 +32,6 @@ module.exports = {
   server: {
     port: 5173,
     strictPort: true,
-  },
-  preview: {
-    allowedHosts: true,
   },
 };
 

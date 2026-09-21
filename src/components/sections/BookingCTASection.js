@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TestimonialSlider from "../TestimonialSlider.js";
+import { compactTestimonialSlides } from "../../content/testimonials.js";
 
 function BookingCTASection() {
   return (
@@ -17,8 +19,27 @@ function BookingCTASection() {
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-400">
                 Book a session for Excel, SQL, Python, or beginner Machine
-                Learning—structured sessions that fit your goals and your pace.
+                Learning. Sessions are structured to fit your goals and pace.
               </p>
+              <p className="mt-4 max-w-lg text-sm leading-relaxed text-slate-300">
+                Real messages from parents and students after sessions.
+              </p>
+              <p className="mt-2 max-w-lg text-sm leading-relaxed text-slate-300">
+                I have over 6 years of experience in tutoring.
+              </p>
+
+              <div className="mt-5 space-y-3">
+                <p className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-slate-300">
+                  Over 1500 hours taught.
+                </p>
+                <p className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-slate-300">
+                  Average rating 4.8/5 and 73% repeat students on Superprof.
+                </p>
+                <p className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-slate-300">
+                  Group tutoring · Individual tutoring · College prep · Career
+                  transfer support · High school tutoring
+                </p>
+              </div>
 
               <div className="mt-8 flex flex-wrap gap-2">
                 {["Excel", "SQL", "Python", "ML"].map((tag) => (
@@ -33,10 +54,10 @@ function BookingCTASection() {
             </div>
 
             <div className="rounded-2xl border border-white/[0.08] bg-[#070a12]/60 p-8 ring-1 ring-white/[0.05] backdrop-blur">
-              <p className="text-sm font-semibold text-white">1-on-1 sessions</p>
+              <p className="text-sm font-semibold text-white">Personal sessions</p>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                Tell me what you’re working toward—then we’ll build a practical
-                path to get there.
+                Tell me what you are working toward. We will build a practical
+                path that helps you get there.
               </p>
               <div className="mt-8">
                 <Link
@@ -45,6 +66,16 @@ function BookingCTASection() {
                 >
                   Check Availability
                 </Link>
+              </div>
+              <div className="mt-8">
+                <h3 className="mb-3 text-sm font-semibold text-white">
+                  Kind words from students
+                </h3>
+                <TestimonialSlider
+                  slides={compactTestimonialSlides}
+                  compact
+                  ariaLabel="Featured parent testimonials"
+                />
               </div>
             </div>
           </div>
