@@ -1,5 +1,19 @@
+const fs = require("fs");
+const path = require("path");
 const react = require("@vitejs/plugin-react");
 const { transformWithEsbuild } = require("vite");
+
+function copyIndexTo404() {
+  return {
+    name: "copy-index-to-404",
+    closeBundle() {
+      const indexFile = path.join("dist", "index.html");
+      if (fs.existsSync(indexFile)) {
+        fs.copyFileSync(indexFile, path.join("dist", "404.html"));
+      }
+    },
+  };
+}
 
 /** @type {import('vite').UserConfig} */
 function treatJsFilesAsJsx() {
@@ -21,7 +35,7 @@ function treatJsFilesAsJsx() {
 
 module.exports = {
   base: process.env.NODE_ENV === "production" ? "/bryan-analytics-lab/" : "/",
-  plugins: [treatJsFilesAsJsx(), react()],
+  plugins: [treatJsFilesAsJsx(), react(), copyIndexTo404()],
   optimizeDeps: {
     esbuildOptions: {
       loader: {
